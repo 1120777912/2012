@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .root {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /* background-color: skyblue; */
+
+    }
+
+    .bgc {
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-box-bodyWrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 200px;
+    }
+
+    body {
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      background: url('https://w.wallhaven.cc/full/28/wallhaven-28ekym.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://w.wallhaven.cc/full/28/wallhaven-28ekym.jpg', sizingMethod='scale');
+      -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://w.wallhaven.cc/full/28/wallhaven-28ekym.jpg', sizingMethod='scale');
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+    }
+
+    .cen {
+      text-align: center;
+    }
+
+    #password {
+      margin-left: 15px;
+    }
+
+    input {
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    .cen button {
+      width: 50px;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .cen span {
+      color: rgb(251, 251, 251);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .pass {
+      display: block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <div class="bgc">
+      <h1 class="title">商品管理登录系统</h1>
+    </div>
+    <div class="login-box-bodyWrap">
+      <div class="login-box-body">
+        <form action="/login/in" method="post" class="cen">
+
+          <span>用户名</span> <input type="text" placeholder="请输入你的管理员账号" id="username" name="username">
+          <br>
+
+          <span>密码</span> <input type="password" placeholder="请输入你的管理员密码" id="password" name="password">
+          <br>
+
+          <button type="submit" class="login">登录</button>
+        </form>
+        <span>还没有账号？去</span><a href="/register">注册</a>
+        <br>
+        <!-- /.social-auth-links -->
+        <a href="#" class="pass">如你忘记了密码，请联系你的负责人</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
